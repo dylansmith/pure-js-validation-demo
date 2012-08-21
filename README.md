@@ -52,6 +52,11 @@ There is an issue with accessing QUnit's DOM fixtures in IE from a require modul
 even using jQuery. I have applied a hacky little quick fix by selecting them in
 the runner.html and adding them to a window.fixtures object.
 
+Device Testing
+--------------
+Tested on IE6, IE8, Chrome (Win), Chrome (Android, Galaxy S2),
+Default browser (Android, Galaxy S2
+
 Further improvements
 --------------------
 Given more time, the code can be improved to support the output of error messages
