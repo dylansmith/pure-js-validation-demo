@@ -1,0 +1,131 @@
+/* general & desktop styles */
+
+body {
+  /* sets font size to 10px, making em-based sizing easier as a factor of 10 */
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+footer {
+  font-size: 1.4em;
+}
+
+.container {
+  padding: 2em;
+  color: #333;
+}
+
+legend {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+form {
+  font-size: 1.3em;
+  width: 24em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  -moz-box-shadow: .2em .2px 5px #888;
+  -webkit-box-shadow: .2em .2px 5px #888;
+  box-shadow: 0 .1em 1em #888;
+  -webkit-border-radius: .4em;
+  -moz-border-radius: .4em;
+  border-radius: .4em;
+}
+
+form .field {
+  clear: both;
+  overflow:auto;
+}
+
+form .field label {
+  display: block;
+  float: left;
+  line-height: 2.2em;
+  margin-right: 1em;
+}
+
+form .field input {
+  display:block;
+  float:right;
+  width: 15em;
+  padding: .2em .3em;
+  font-size: 1em;
+}
+
+form .field .error {
+  outline: none;
+  border: 2px solid #cf3838;
+}
+
+fieldset .actions {
+  margin-top: .5em;
+  text-align: right;
+  clear:both;
+}
+
+fieldset .actions input {
+  font-size: 1em;
+}
+
+.message {
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+/* mobile styles */
+
+@media (max-width: 480px) {
+
+  form {
+    width: auto;
+    font-size: 1.8em;
+  }
+
+  legend {
+    margin-bottom: 0;
+  }
+
+  form, fieldset .actions {
+    text-align: center;
+  }
+
+  form .field {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form .field input,
+  form .field label {
+    float: none;
+    width: 90%;
+  }
+
+  fieldset .actions {
+    margin-top: 1em;
+  }
+
+}
+
+/* ie6 fixes */
+.lt-ie7 form {
+  border: 1px solid #999;
+  width: 28em;
+}
+
+.lt-ie7 legend {
+  display:block;
+  line-height: 1.4em;
+  margin-left:-5px;
+}
+
+.lt-ie7 form .field input {
+  width: 18em;
+  padding: 0.2em;
+  height:2em;
+}
+
+.lt-ie7 form .field label {
+  line-height: 1.6em;
+}

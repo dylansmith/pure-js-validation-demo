@@ -1,0 +1,57 @@
+<!-- This document head markup is based on the excellent HTML5 Bootstrap -->
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Dylan Smith - JavaScript Form Validation Example</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script data-main="js/main" src="js/vendor/require.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="container" role="main">
+
+    <form id="form-login" action="success.html" method="POST">
+      <fieldset>
+        <legend>Log In</legend>
+
+        <div class="field">
+          <label for="form-login-username">Username</label>
+          <input type="text" id="form-login-username" name="username" placeholder="" autofocus tabindex="1" />
+        </div>
+
+        <div class="field">
+          <label for="form-login-password">Password</label>
+          <input type="password" id="form-login-password" name="password" tabindex="2" />
+        </div>
+
+        <div class="actions">
+          <input type="reset" value="Clear" tabindex="4"/>
+          <input type="submit" value="Submit" tabindex="3" />
+        </div>
+
+      </fieldset>
+    </form>
+
+    <div id="message-box" class="message">Status: JavaScript has not loaded yet, but form still allows submit</div>
+
+    <footer>
+      <a href="js/test/runner.html" title="Run the unit tests">Run the unit tests</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
