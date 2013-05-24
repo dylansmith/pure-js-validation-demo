@@ -20,7 +20,7 @@ module pattern, e.g.
 
       namespace.MyClass = MyClass;
 
-    }(myNamespace));
+    })(myNamespace);
 
 The example above assumes that a namespace object (myNamespace) has been
 created by the application before subsequent modules are executed by the interpreter.
