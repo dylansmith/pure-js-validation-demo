@@ -29,7 +29,7 @@ This approach would require all external JavaScripts to be added to the document
 HEAD or BODY, creating multiple HTTP requests on page load which will hamper
 performance. However, if you took this approach, classes could be accessed via:
 
-    var instance = myNamespace.MyClass();
+    var instance = new myNamespace.MyClass();
 
 HTML & CSS
 ----------
